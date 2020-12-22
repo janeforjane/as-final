@@ -1,0 +1,59 @@
+<html>
+<head>
+    <title>webTmp4Example</title>
+</head>
+<body>
+
+<form method="get" id="form1" action="enterDataServlet">
+
+    <fieldset style="border:1px #ffb0dd solid;">
+        <legend><span style="font-family:Monotype Corsiva;color:#cb6ac6;font-size:18px">Save data </span> </legend>
+
+        <div>
+            <label>Enter the name of the city:</label><br>
+            <input name="city" type="user-string" required autofocus><br>
+            <br>
+            <label>Enter population size of the city:</label><br>
+            <input name="population" type="number" placeholder="enter only numbers" required>
+        </div><br>
+        <div>
+            <input name="enter" type="submit" value="Save">
+            <input name="reset" type="reset" value="Clear">
+        </div>
+    </fieldset>
+</form>
+<form method="get" id="form2" action="removeDataServlet">
+
+    <fieldset style="border:1px #ffb0dd solid;">
+        <legend><span style="font-family:Monotype Corsiva;color:#cb6ac6;font-size:18px">Remove data </span> </legend>
+
+        <div>
+            <label>Enter the name of the city that you want to remove:</label><br>
+            <input name="city" type="user-string" required autofocus><br>
+        </div><br>
+        <div>
+            <input name="enter" type="submit" value="Remove">
+            <input name="reset" type="reset" value="Clear">
+        </div>
+    </fieldset>
+</form>
+<form method="get" id="form3" action="getDataServlet">
+
+    <fieldset style="border:1px #ffb0dd solid;">
+        <legend><span style="font-family:Monotype Corsiva;color:#cb6ac6;font-size:18px">Get data</span> </legend>
+
+        <div>
+            <label>Your conditions (not required):</label>
+        </div><br>
+        <div>
+            <label>Enter the name of the city:</label><br>
+            <input name="city" type="user-string"  autofocus><br>
+        </div><br>
+        <div>
+            <input name="enter" type="submit" value="Get">
+            <input name="reset" type="reset" value="Clear">
+        </div>
+    </fieldset>
+</form>
+</body>
+</html>
